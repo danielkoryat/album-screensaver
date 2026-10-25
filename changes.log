@@ -1,0 +1,26 @@
+== changes Sun Oct 25 09:56:47 EST 2026
+orig animator_duration_scale=1.0
+orig screensaver_components=com.google.android.backdrop/com.google.android.backdrop.Backdrop
+uninstall com.photo.wallpaper.tv.android: Success
+uninstall com.sonyliv: Success
+uninstall in.startv.hotstar: Success
+uninstall com.nousguide.android.rbtv: Success
+uninstall com.snapwood.photos2: Success
+uninstall com.spotify.tv.android: Success
+uninstall com.google.android.music: Success
+uninstall com.google.android.apps.inputmethod.hindi: Success
+uninstall com.google.android.apps.inputmethod.zhuyin: Success
+uninstall com.google.android.inputmethod.japanese: Success
+uninstall com.google.android.inputmethod.pinyin: Success
+disable com.mitv.download.service: Package com.mitv.download.service new state: disabled-user
+disable com.miui.tv.analytics: Package com.miui.tv.analytics new state: disabled-user
+force-stop stremio done
+trim-caches: 
+animator=0.5
+screensaver=com.android.dreams.basic/com.android.dreams.basic.Colors
+Data-Free: 2375392K / 5383352K total = 44% free
+App Cache Size: 1339277312
+reboot Sun Oct 25 10:05:54 EST 2026
+screensaver Sun Oct 25 10:15:04 EST 2026: set to com.snapwood.photos2/com.snapwood.picfolio.DreamService (PixFolio reinstalled)
+2026-10-25 10:44 secure screensaver_components: com.snapwood.photos2/com.snapwood.picfolio.DreamService -> com.dk.albumdream/.AlbumDream (new Album Screensaver app installed: com.dk.albumdream)
+2026-10-25 12:16 uninstalled com.snapwood.photos2 (PixFolio), replaced by com.dk.albumdream

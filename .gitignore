@@ -1,0 +1,6 @@
+# Private: agent brief with personal device/network details, and raw device diagnostics
+HANDOFF.md
+baseline/
+mibox_*.txt
+# Build outputs
+*.apk
