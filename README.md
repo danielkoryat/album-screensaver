@@ -4,6 +4,32 @@ A lightweight Android TV screensaver (DreamService) that plays photos from one o
 shared-album links**. No sign-in and no Google Cloud project: point it at album links and new photos show up
 by themselves. Built for an old Xiaomi Mi Box 3 (Android TV 9, 2 GB RAM, 32-bit), so memory use is kept low.
 
+## Install on your TV
+
+Download the APK from the [latest release](https://github.com/danielkoryat/album-screensaver/releases/latest).
+It isn't on the Play Store, so it's installed by sideloading:
+
+- **With the Downloader app** (on the Play Store for Android TV): allow Downloader to install unknown apps
+  when it asks, then enter
+  `https://github.com/danielkoryat/album-screensaver/releases/latest/download/AlbumScreensaver.apk`
+- **With adb from a computer:** `adb connect <tv-ip>:5555`, then `adb install AlbumScreensaver.apk`
+
+Then turn it on:
+
+1. Open **Album Screensaver** from the TV's app list and add your albums. In Google Photos, open an album,
+   tap Share, then Copy link (link sharing must be on). Easiest: open the address shown on the TV on your
+   phone and paste the link there.
+2. Choose it as the screensaver: **Settings → Device Preferences → Screen saver → Album Screensaver**
+   (the "TV screensaver settings" row in the app opens this). Some Google TV devices hide third-party
+   screensavers; there, use adb:
+   `adb shell settings put secure screensaver_components com.dk.albumdream/.AlbumDream`
+
+Updates: install the newer APK over the old one; settings and downloaded photos are kept.
+
+**Privacy:** anyone with an album's share link can see that album. The app talks only to Google Photos
+(to read the albums you add) and to Android's built-in geocoder (for place names); it has no ads,
+analytics or accounts.
+
 ## Features
 
 - Photos from all albums shuffled together; mix by photo or equally per album; show/hide each album.
